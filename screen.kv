@@ -1,0 +1,22 @@
+#:kivy 2.1
+<MyLayout>
+    GridLayout:
+
+        cols:2
+    
+        Label:
+            id:"prompt_label"
+            text:"prompt"
+            font_size: 32
+            size_int: (1, .3)
+        
+        TextInput:
+            id:"input_label"
+            multiline: False
+            size_hint: (1, .3)
+
+        Button:
+            text: "submit"
+            size_hint: (1, .3)
+            font_size: 32
+            on_press: root.press()
